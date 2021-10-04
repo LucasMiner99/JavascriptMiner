@@ -31,7 +31,7 @@ consultaServicios();
 
 let codigoDescuento = prompt("Sale $460, ingrese codigo de descuento");
 
-if (codigoDescuento = "miner".toLowerCase()){
+if (codigoDescuento == "miner".toLowerCase()){
     var precioFinal = 460 - (460 * 10 / 100);
     alert("El precio final es de $" + precioFinal);
 }
@@ -41,7 +41,7 @@ else{
 
 let calcularIVA = prompt("Desea calcular IVA? ingrese SI o NO");
 
-if (calcularIVA = "si".toLowerCase()){
+if (calcularIVA == "si".toLowerCase()){
     var IVA = precioFinal + (precioFinal * 21 / 100);
     alert("El precio final + IVA es de " + IVA)
 }
