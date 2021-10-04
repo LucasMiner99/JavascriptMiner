@@ -1,0 +1,87 @@
+body{
+    background-image: url(assets/fondo.png);
+}
+
+.titulo{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: Montserrat;
+    font-weight: 800;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    margin-block-start: 0px;
+    margin-block-end: 0;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: white;
+}
+
+.grid-container{
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container-2{
+    padding: 50px 0px 0px 0px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container-3{
+    padding: 50px 0px 0px 0px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio_tarjeta{
+    width: 200px;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px black;
+    transition:  .3s;
+}
+
+.servicio_tarjeta:hover{
+    width: 200px;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px black;
+    transform: scale(1.1);
+}
+
+.grid-container-4{
+    padding: 50px 0px 0px 0px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+}

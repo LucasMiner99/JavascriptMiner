@@ -1,24 +1,50 @@
-let operacion = prompt("Elija una operacion: suma, resta, multiplicacion, division. Si desea terminar, escriba salir");
+let nombreUsuario = prompt("Porfavor ingrese su nombre");
+let sexoUsuario = prompt("Ingrese F o M (Sexo)");
 
-while(operacion != "salir"){
+if (sexoUsuario == "f".toLowerCase() ){
+    alert("Bienvenida " + nombreUsuario + " !");
+}
+else {
+    alert("Bienvenido " + nombreUsuario + " !");
+}
 
-    let numeroA = parseInt(prompt("Ingrese el primer numero"));
-    let numeroB = parseInt(prompt("Ingrese el segundo numero"));
-
-    if (operacion.toLowerCase() == "suma"){
-        alert(numeroA + numeroB);
+function consultaServicios(){
+    let servicios = prompt("Introduzca un servicio: desarrollo web, diseño grafico, edicion de video, render 3d");
+    if(servicios == "desarrollo web".toLowerCase()){
+        alert ("Elegiste Desarrollo Web! ingresa el codigo 'MINER' para un 10% de descuento!")
     }
-    else if (operacion.toLowerCase() == "resta"){
-        alert(numeroA - numeroB);
+    else if(servicios == "diseño grafico".toLowerCase()){
+        alert ("Elegiste Diseño Grafico! ingresa el codigo 'MINER' para un 10% de descuento!")
     }
-    else if (operacion.toLowerCase() == "multiplicacion"){
-        alert(numeroA * numeroB);
+    else if(servicios == "edicion de video".toLowerCase()){
+        alert ("Elegiste Edicion de Video! ingresa el codigo 'MINER' para un 10% de descuento!")
     }
-    else if (operacion.toLowerCase() == "division"){
-        alert(numeroA / numeroB);
+    else if(servicios == "render 3d".toLowerCase()){
+        alert("Elegiste Render 3D! ingresa el codigo 'MINER' para un 10% de descuento!")
     }
-    else (alert = "Error");
+    else{
+        alert("ERROR")
+    }
+}
 
-    operacion = prompt("Elija una operacion: suma, resta, multiplicacion, division. Si desea terminar, escriba salir");
+consultaServicios();
 
+let codigoDescuento = prompt("Sale $460, ingrese codigo de descuento");
+
+if (codigoDescuento = "miner".toLowerCase()){
+    var precioFinal = 460 - (460 * 10 / 100);
+    alert("El precio final es de $" + precioFinal);
+}
+else{
+    alert("ERROR");
+}
+
+let calcularIVA = prompt("Desea calcular IVA? ingrese SI o NO");
+
+if (calcularIVA = "si".toLowerCase()){
+    var IVA = precioFinal + (precioFinal * 21 / 100);
+    alert("El precio final + IVA es de " + IVA)
+}
+else{
+    alert("El precio final sin IVA incluido es $" + precioFinal);
 }
