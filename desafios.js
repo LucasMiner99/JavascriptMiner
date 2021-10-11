@@ -1,3 +1,5 @@
+/*
+
 let nombreUsuario = prompt("Porfavor ingrese su nombre");
 let sexoUsuario = prompt("Ingrese F o M (Sexo)");
 
@@ -48,3 +50,46 @@ if (calcularIVA == "si".toLowerCase()){
 else{
     alert("El precio final sin IVA incluido es $" + precioFinal);
 }
+
+*/
+
+/*
+const Burger = {
+
+    nombre: "Cheese Bacon",
+    ingredientes: "Queso Cheddar, Bacon",
+    precio: 200
+
+};
+*/
+
+function Burger(nombre,ingredientes,precio){
+
+    this.nombre = nombre;
+    this.ingredientes = ingredientes;
+    this.precio = precio;  
+
+    this.consultaPrecio = function(){
+        alert("La " + this.nombre + " tiene " + this.ingredientes + " y sale $" + this.precio);
+    }
+}
+
+
+let burger1 = new Burger ("Cheese Bacon","Queso Cheddar y Bacon", 400);
+let burger2 = new Burger ("Cheese Onion","Queso Cheddar y Cebolla Caramelizada", 500);
+let burger3 = new Burger ("Crispy","Queso Cheddar y Aros de Cebolla", 600);
+
+let consulta = prompt("Escribi burger1, burger2 o burger3 para conocer las hamburguesas");
+
+if (consulta == "burger1".toLowerCase()) {
+    burger1.consultaPrecio()
+}
+else if (consulta == "burger2".toLowerCase()) {
+    burger2.consultaPrecio()
+}
+else if (consulta == "burger3".toLowerCase()) {
+    burger3.consultaPrecio()
+}
+else(
+    alert("ERROR")
+);
